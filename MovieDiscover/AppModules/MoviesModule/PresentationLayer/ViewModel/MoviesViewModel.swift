@@ -21,7 +21,8 @@ class MoviesViewModel: ObservableObject {
         self.repository = repository
     }
 
-    @MainActor func fetchWithLoading() {
+    @MainActor 
+    func fetchWithLoading() {
         isLoading = true
         Task {
             await fetchMovies()
@@ -40,8 +41,18 @@ class MoviesViewModel: ObservableObject {
         }
     }
     
-    private func mapMoviesToPresentationModel(_ businessModel: MovieBusinessModel) -> MoviePresentationModel {
-        MoviePresentationModel(title: "", overview: "",
-                               posterPath: "", releaseDate: "")
+    nonisolated private func mapMoviesToPresentationModel(_ businessModel: MovieBusinessModel) -> MoviePresentationModel {
+        MoviePresentationModel(title: businessModel.title,
+                               overview: businessModel.overview,
+                               posterPath: "", 
+                               releaseDate: formatDate(businessModel.releaseDate))
+    }
+    
+    nonisolated private func formatDate(_ stringDate: String) -> String {
+        let dateFormatter = DateFormatter()
+        dateFormatter.locale = Locale.current
+        dateFormatter.dateFormat = "yyyy-MM-dd"
+        let date = dateFormatter.date(from: stringDate) ?? .now
+        return dateFormatter.string(from: date)
     }
 }

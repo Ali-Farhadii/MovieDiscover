@@ -33,7 +33,6 @@ struct MoviesView: View {
         ProgressView()
             .progressViewStyle(CircularProgressViewStyle())
             .padding()
-            .navigationTitle("Movies")
     }
     
     var errorView: some View {
@@ -44,17 +43,17 @@ struct MoviesView: View {
             Button {
                 viewModel.fetchWithLoading()
             } label: {
-                Text(NSLocalizedString("Try Again Button Title", value: "Try Again", comment: ""))
+                Text("Try Again")
                     .foregroundColor(.blue)
             }
         }
-        .navigationTitle("Movies")
     }
     
     var moviesListView: some View {
         List(viewModel.movies) { movie in
-            Text("Test")
+            MovieCellView(movie: movie)
         }
+        .listStyle(.plain)
         .navigationTitle("Movies")
     }
 }
