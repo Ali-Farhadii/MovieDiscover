@@ -26,6 +26,7 @@
 		22C960B62BE21F420022DBF9 /* MovieDecodableModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22C960B52BE21F420022DBF9 /* MovieDecodableModel.swift */; };
 		22C960B92BE220920022DBF9 /* DiscoverMovieBusinessModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22C960B82BE220920022DBF9 /* DiscoverMovieBusinessModel.swift */; };
 		22C960BB2BE2209A0022DBF9 /* MovieBusinessModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22C960BA2BE2209A0022DBF9 /* MovieBusinessModel.swift */; };
+		22C960BD2BE223380022DBF9 /* MoviesRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22C960BC2BE223380022DBF9 /* MoviesRepository.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -49,6 +50,7 @@
 		22C960B52BE21F420022DBF9 /* MovieDecodableModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDecodableModel.swift; sourceTree = "<group>"; };
 		22C960B82BE220920022DBF9 /* DiscoverMovieBusinessModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoverMovieBusinessModel.swift; sourceTree = "<group>"; };
 		22C960BA2BE2209A0022DBF9 /* MovieBusinessModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieBusinessModel.swift; sourceTree = "<group>"; };
+		22C960BC2BE223380022DBF9 /* MoviesRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesRepository.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -200,6 +202,7 @@
 		22C960AB2BE21D530022DBF9 /* Repository */ = {
 			isa = PBXGroup;
 			children = (
+				22C960BC2BE223380022DBF9 /* MoviesRepository.swift */,
 				22C960B72BE220760022DBF9 /* BusinessModel */,
 			);
 			path = Repository;
@@ -314,6 +317,7 @@
 				22C960832BE207DF0022DBF9 /* MoviesView.swift in Sources */,
 				22C960AE2BE21D7C0022DBF9 /* MoviesRemoteDataSource.swift in Sources */,
 				22C9609C2BE210100022DBF9 /* NetworkError.swift in Sources */,
+				22C960BD2BE223380022DBF9 /* MoviesRepository.swift in Sources */,
 				22C960A82BE218EE0022DBF9 /* AboutView.swift in Sources */,
 				22C960A62BE217EA0022DBF9 /* AppDependencyContainer.swift in Sources */,
 				22C9609A2BE20F5F0022DBF9 /* URLSessionService.swift in Sources */,

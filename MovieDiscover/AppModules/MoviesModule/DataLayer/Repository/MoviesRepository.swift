@@ -6,3 +6,20 @@
 //
 
 import Foundation
+
+protocol MoviesRepositoryProtocol {
+    func fetchMovies() async throws -> DiscoverMovieBusinessModel
+}
+
+class MoviesRepository: MoviesRepositoryProtocol {
+    
+    let remoteDataSource: MoviesRemoteDataSource
+    
+    init(remoteDataSource: MoviesRemoteDataSource) {
+        self.remoteDataSource = remoteDataSource
+    }
+    
+    func fetchMovies() async throws -> DiscoverMovieBusinessModel {
+        try await remoteDataSource.fetchMovies()
+    }
+}
