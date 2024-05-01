@@ -18,7 +18,7 @@ struct AboutView: View {
                 Text("Movie Discover")
                     .font(.largeTitle)
                 
-                Text("This app is uses the TMDB free APIs to show a list of movies with pagination and search features.\nI have used SwiftUI for UI part and also new Swift concurrency system for networking layer.")
+                Text("This app is uses the TMDB free APIs to show a list of movies with pagination and search features.\n\nI have used SwiftUI for UI part and also new Swift concurrency system for networking layer.")
                     .font(.title2)
                     .padding()
                 
