@@ -24,6 +24,8 @@
 		22C960B12BE21D920022DBF9 /* MoviesEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22C960B02BE21D920022DBF9 /* MoviesEndpoint.swift */; };
 		22C960B42BE21F360022DBF9 /* DiscoverMovieDecodableModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22C960B32BE21F360022DBF9 /* DiscoverMovieDecodableModel.swift */; };
 		22C960B62BE21F420022DBF9 /* MovieDecodableModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22C960B52BE21F420022DBF9 /* MovieDecodableModel.swift */; };
+		22C960B92BE220920022DBF9 /* DiscoverMovieBusinessModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22C960B82BE220920022DBF9 /* DiscoverMovieBusinessModel.swift */; };
+		22C960BB2BE2209A0022DBF9 /* MovieBusinessModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22C960BA2BE2209A0022DBF9 /* MovieBusinessModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -45,6 +47,8 @@
 		22C960B02BE21D920022DBF9 /* MoviesEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesEndpoint.swift; sourceTree = "<group>"; };
 		22C960B32BE21F360022DBF9 /* DiscoverMovieDecodableModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoverMovieDecodableModel.swift; sourceTree = "<group>"; };
 		22C960B52BE21F420022DBF9 /* MovieDecodableModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDecodableModel.swift; sourceTree = "<group>"; };
+		22C960B82BE220920022DBF9 /* DiscoverMovieBusinessModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoverMovieBusinessModel.swift; sourceTree = "<group>"; };
+		22C960BA2BE2209A0022DBF9 /* MovieBusinessModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieBusinessModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -315,11 +319,13 @@
 				22C9609A2BE20F5F0022DBF9 /* URLSessionService.swift in Sources */,
 				22C960A42BE2179D0022DBF9 /* MoviesDependencyContainer.swift in Sources */,
 				22C960912BE20AF50022DBF9 /* NetworkService.swift in Sources */,
+				22C960BB2BE2209A0022DBF9 /* MovieBusinessModel.swift in Sources */,
 				22C960932BE20B2E0022DBF9 /* Endpoint.swift in Sources */,
 				22C960952BE20BA40022DBF9 /* HTTPMethod.swift in Sources */,
 				22C960812BE207DF0022DBF9 /* MovieDiscoverApp.swift in Sources */,
 				22C960B42BE21F360022DBF9 /* DiscoverMovieDecodableModel.swift in Sources */,
 				22C960972BE20CA70022DBF9 /* Constants.swift in Sources */,
+				22C960B92BE220920022DBF9 /* DiscoverMovieBusinessModel.swift in Sources */,
 				22C960B12BE21D920022DBF9 /* MoviesEndpoint.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
