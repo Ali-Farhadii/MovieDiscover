@@ -27,6 +27,8 @@
 		22C960B92BE220920022DBF9 /* DiscoverMovieBusinessModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22C960B82BE220920022DBF9 /* DiscoverMovieBusinessModel.swift */; };
 		22C960BB2BE2209A0022DBF9 /* MovieBusinessModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22C960BA2BE2209A0022DBF9 /* MovieBusinessModel.swift */; };
 		22C960BD2BE223380022DBF9 /* MoviesRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22C960BC2BE223380022DBF9 /* MoviesRepository.swift */; };
+		22C960C22BE229BB0022DBF9 /* MoviesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22C960C12BE229BB0022DBF9 /* MoviesViewModel.swift */; };
+		22C960C42BE229D70022DBF9 /* MoviePresentationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22C960C32BE229D70022DBF9 /* MoviePresentationModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -51,6 +53,8 @@
 		22C960B82BE220920022DBF9 /* DiscoverMovieBusinessModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoverMovieBusinessModel.swift; sourceTree = "<group>"; };
 		22C960BA2BE2209A0022DBF9 /* MovieBusinessModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieBusinessModel.swift; sourceTree = "<group>"; };
 		22C960BC2BE223380022DBF9 /* MoviesRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesRepository.swift; sourceTree = "<group>"; };
+		22C960C12BE229BB0022DBF9 /* MoviesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesViewModel.swift; sourceTree = "<group>"; };
+		22C960C32BE229D70022DBF9 /* MoviePresentationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviePresentationModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -160,6 +164,8 @@
 			isa = PBXGroup;
 			children = (
 				22C960A12BE2173F0022DBF9 /* View */,
+				22C960BF2BE229810022DBF9 /* ViewModel */,
+				22C960C02BE229930022DBF9 /* PresentationModel */,
 			);
 			path = PresentationLayer;
 			sourceTree = "<group>";
@@ -167,7 +173,7 @@
 		22C960A12BE2173F0022DBF9 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				22C960822BE207DF0022DBF9 /* MoviesView.swift */,
+				22C960BE2BE229620022DBF9 /* Movies */,
 				22C960A72BE218EE0022DBF9 /* AboutView.swift */,
 			);
 			path = View;
@@ -241,6 +247,31 @@
 				22C960BA2BE2209A0022DBF9 /* MovieBusinessModel.swift */,
 			);
 			path = BusinessModel;
+			sourceTree = "<group>";
+		};
+		22C960BE2BE229620022DBF9 /* Movies */ = {
+			isa = PBXGroup;
+			children = (
+				22C960822BE207DF0022DBF9 /* MoviesView.swift */,
+				22C960C52BE22A7C0022DBF9 /* MovieCellView.swift */,
+			);
+			path = Movies;
+			sourceTree = "<group>";
+		};
+		22C960BF2BE229810022DBF9 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				22C960C12BE229BB0022DBF9 /* MoviesViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		22C960C02BE229930022DBF9 /* PresentationModel */ = {
+			isa = PBXGroup;
+			children = (
+				22C960C32BE229D70022DBF9 /* MoviePresentationModel.swift */,
+			);
+			path = PresentationModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -317,6 +348,7 @@
 				22C960832BE207DF0022DBF9 /* MoviesView.swift in Sources */,
 				22C960AE2BE21D7C0022DBF9 /* MoviesRemoteDataSource.swift in Sources */,
 				22C9609C2BE210100022DBF9 /* NetworkError.swift in Sources */,
+				22C960C42BE229D70022DBF9 /* MoviePresentationModel.swift in Sources */,
 				22C960BD2BE223380022DBF9 /* MoviesRepository.swift in Sources */,
 				22C960A82BE218EE0022DBF9 /* AboutView.swift in Sources */,
 				22C960A62BE217EA0022DBF9 /* AppDependencyContainer.swift in Sources */,
@@ -327,6 +359,7 @@
 				22C960932BE20B2E0022DBF9 /* Endpoint.swift in Sources */,
 				22C960952BE20BA40022DBF9 /* HTTPMethod.swift in Sources */,
 				22C960812BE207DF0022DBF9 /* MovieDiscoverApp.swift in Sources */,
+				22C960C22BE229BB0022DBF9 /* MoviesViewModel.swift in Sources */,
 				22C960B42BE21F360022DBF9 /* DiscoverMovieDecodableModel.swift in Sources */,
 				22C960972BE20CA70022DBF9 /* Constants.swift in Sources */,
 				22C960B92BE220920022DBF9 /* DiscoverMovieBusinessModel.swift in Sources */,
