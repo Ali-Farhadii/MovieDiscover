@@ -45,6 +45,7 @@ class MoviesViewModel: ObservableObject {
         MoviePresentationModel(title: businessModel.title,
                                overview: businessModel.overview,
                                posterPath: "", 
+                               posterPath: businessModel.posterPath, 
                                releaseDate: formatDate(businessModel.releaseDate))
     }
     

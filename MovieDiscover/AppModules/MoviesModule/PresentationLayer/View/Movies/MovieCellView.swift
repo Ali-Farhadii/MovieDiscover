@@ -13,17 +13,17 @@ struct MovieCellView: View {
     
     var body: some View {
         HStack {
-            AsyncImage(url: nil) { image in
+            AsyncImage(url: URL(string: Constants.imagesBaseURL + movie.posterPath)) { image in
                 image
                     .resizable()
                     .scaledToFit()
-                    .frame(width: 80, height: 100)
-                    .clipShape(.rect(cornerRadius: 10))
+                    .frame(width: 110, height: 150)
+                    .clipShape(.rect(cornerRadius: 15))
             } placeholder: {
                 Image(systemName: "text.below.photo")
                     .resizable()
                     .scaledToFit()
-                    .frame(width: 60, height: 70)
+                    .frame(width: 110, height: 100)
                     .clipShape(.rect(cornerRadius: 8))
             }
             
@@ -53,7 +53,7 @@ struct MovieCellView: View {
         movie: MoviePresentationModel(
             title: "Test title",
             overview: "Test ovreview",
-            posterPath: "",
+            posterPath: "/8QVDXDiOGHRcAD4oM6MXjE0osSj.jpg",
             releaseDate: "Jan 2024"
         )
     )
