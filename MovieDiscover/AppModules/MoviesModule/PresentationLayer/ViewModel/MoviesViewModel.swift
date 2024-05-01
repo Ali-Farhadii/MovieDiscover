@@ -20,6 +20,27 @@ class MoviesViewModel: ObservableObject {
     init(repository: MoviesRepositoryProtocol) {
         self.repository = repository
     }
+    
+    @MainActor
+    func searchMovie(with newValue: String) {
+        Task {
+            if newValue.isEmpty {
+                movies = []
+                await fetchMovies()
+            } else {
+                await searchMovie(with: newValue)
+            }
+        }
+    }
+    
+    @MainActor
+    private func searchMovie(with text: String) async {
+        do {
+            movies = try await repository.searchMovie(with: text).results.map(mapMoviesToPresentationModel(_:))
+        } catch {
+            print(error)
+        }
+    }
 
     @MainActor 
     func fetchWithLoading() {

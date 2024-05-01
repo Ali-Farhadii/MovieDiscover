@@ -10,6 +10,7 @@ import SwiftUI
 struct MoviesView: View {
     
     @ObservedObject var viewModel: MoviesViewModel
+    @State private var searchText = ""
     
     var body: some View {
         NavigationStack {
@@ -21,6 +22,10 @@ struct MoviesView: View {
                 moviesListView
             }
         }
+        .searchable(text: $searchText)
+        .onChange(of: searchText, { _, searchValue in
+            viewModel.searchMovie(with: searchValue)
+        })
         .refreshable {
             await viewModel.fetchMovies()
         }
