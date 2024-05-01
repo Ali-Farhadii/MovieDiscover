@@ -20,6 +20,7 @@
 		22C960A42BE2179D0022DBF9 /* MoviesDependencyContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22C960A32BE2179D0022DBF9 /* MoviesDependencyContainer.swift */; };
 		22C960A62BE217EA0022DBF9 /* AppDependencyContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22C960A52BE217EA0022DBF9 /* AppDependencyContainer.swift */; };
 		22C960A82BE218EE0022DBF9 /* AboutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22C960A72BE218EE0022DBF9 /* AboutView.swift */; };
+		22C960B12BE21D920022DBF9 /* MoviesEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22C960B02BE21D920022DBF9 /* MoviesEndpoint.swift */; };
 		22C960B42BE21F360022DBF9 /* DiscoverMovieDecodableModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22C960B32BE21F360022DBF9 /* DiscoverMovieDecodableModel.swift */; };
 		22C960B62BE21F420022DBF9 /* MovieDecodableModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22C960B52BE21F420022DBF9 /* MovieDecodableModel.swift */; };
 /* End PBXBuildFile section */
@@ -39,6 +40,7 @@
 		22C960A32BE2179D0022DBF9 /* MoviesDependencyContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesDependencyContainer.swift; sourceTree = "<group>"; };
 		22C960A52BE217EA0022DBF9 /* AppDependencyContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDependencyContainer.swift; sourceTree = "<group>"; };
 		22C960A72BE218EE0022DBF9 /* AboutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutView.swift; sourceTree = "<group>"; };
+		22C960B02BE21D920022DBF9 /* MoviesEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesEndpoint.swift; sourceTree = "<group>"; };
 		22C960B32BE21F360022DBF9 /* DiscoverMovieDecodableModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoverMovieDecodableModel.swift; sourceTree = "<group>"; };
 		22C960B52BE21F420022DBF9 /* MovieDecodableModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDecodableModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -315,6 +317,7 @@
 				22C960812BE207DF0022DBF9 /* MovieDiscoverApp.swift in Sources */,
 				22C960B42BE21F360022DBF9 /* DiscoverMovieDecodableModel.swift in Sources */,
 				22C960972BE20CA70022DBF9 /* Constants.swift in Sources */,
+				22C960B12BE21D920022DBF9 /* MoviesEndpoint.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
