@@ -6,3 +6,9 @@
 //
 
 import Foundation
+
+enum NetworkError: String, Error {
+    case badRequest = "Bad request"
+    case invalidResponse = "Invalid response"
+    case decodeFailed = "Decoding failed"
+}
