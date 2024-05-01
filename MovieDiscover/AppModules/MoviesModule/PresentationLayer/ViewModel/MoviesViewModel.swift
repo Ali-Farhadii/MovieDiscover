@@ -12,10 +12,10 @@ class MoviesViewModel: ObservableObject {
     @Published var movies: [MoviePresentationModel] = []
     @Published var isLoading = false
     @Published var isError = false
+    @Published var isMoreDataAvailable = false
     
     let repository: MoviesRepositoryProtocol
-    var page = 1
-    var totalPage = 0
+    var page = 0
     
     init(repository: MoviesRepositoryProtocol) {
         self.repository = repository
@@ -33,18 +33,20 @@ class MoviesViewModel: ObservableObject {
     @MainActor
     func fetchMovies() async {
         do {
-            let discoveryBusinessModel = try await repository.fetchMovies()
-            movies = discoveryBusinessModel.results.map(mapMoviesToPresentationModel(_:))
-            totalPage = discoveryBusinessModel.totalPages
+            page += 1
+            let discoveryBusinessModel = try await repository.fetchMovies(with: page)
+            movies.append(contentsOf: discoveryBusinessModel.results.map(mapMoviesToPresentationModel(_:)))
+            isMoreDataAvailable = page < discoveryBusinessModel.totalPages &&
+                                  movies.index(movies.endIndex, offsetBy: -1) < discoveryBusinessModel.totalResults
         } catch {
             isError = true
+            page = 0
         }
     }
     
     nonisolated private func mapMoviesToPresentationModel(_ businessModel: MovieBusinessModel) -> MoviePresentationModel {
         MoviePresentationModel(title: businessModel.title,
                                overview: businessModel.overview,
-                               posterPath: "", 
                                posterPath: businessModel.posterPath, 
                                releaseDate: formatDate(businessModel.releaseDate))
     }

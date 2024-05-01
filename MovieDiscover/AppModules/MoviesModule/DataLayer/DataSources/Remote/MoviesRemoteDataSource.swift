@@ -8,7 +8,7 @@
 import Foundation
 
 protocol MoviesRemoteDataSource {
-    func fetchMovies() async throws -> DiscoverMovieBusinessModel
+    func fetchMovies(with page: Int) async throws -> DiscoverMovieBusinessModel
 }
 
 struct MoviesURLSessionDataSource: MoviesRemoteDataSource {
@@ -19,8 +19,8 @@ struct MoviesURLSessionDataSource: MoviesRemoteDataSource {
         self.networkService = networkService
     }
     
-    func fetchMovies() async throws -> DiscoverMovieBusinessModel {
-        mapDiscoverMoviesToBusinessModel(try await networkService.request(with: MoviesEndpoint()))
+    func fetchMovies(with page: Int) async throws -> DiscoverMovieBusinessModel {
+        mapDiscoverMoviesToBusinessModel(try await networkService.request(with: MoviesEndpoint(page: page)))
     }
     
     private func mapDiscoverMoviesToBusinessModel(_ decodableModel: DiscoverMovieDecodableModel) -> DiscoverMovieBusinessModel {

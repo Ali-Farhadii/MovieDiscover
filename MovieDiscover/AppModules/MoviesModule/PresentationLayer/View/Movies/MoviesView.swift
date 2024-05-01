@@ -50,11 +50,28 @@ struct MoviesView: View {
     }
     
     var moviesListView: some View {
-        List(viewModel.movies) { movie in
-            MovieCellView(movie: movie)
+        List {
+            ForEach(viewModel.movies, id: \.id) { movie in
+                MovieCellView(movie: movie)
+            }
+            
+            if viewModel.isMoreDataAvailable {
+                lastRowView
+            }
         }
         .listStyle(.plain)
         .navigationTitle("Movies")
+    }
+    
+    var lastRowView: some View {
+        HStack {
+            Spacer()
+            ProgressView()
+            Spacer()
+        }
+        .task {
+            await viewModel.fetchMovies()
+        }
     }
 }
 

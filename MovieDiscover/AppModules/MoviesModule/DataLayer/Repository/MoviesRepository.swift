@@ -8,7 +8,7 @@
 import Foundation
 
 protocol MoviesRepositoryProtocol {
-    func fetchMovies() async throws -> DiscoverMovieBusinessModel
+    func fetchMovies(with pages: Int) async throws -> DiscoverMovieBusinessModel
 }
 
 class MoviesRepository: MoviesRepositoryProtocol {
@@ -19,7 +19,7 @@ class MoviesRepository: MoviesRepositoryProtocol {
         self.remoteDataSource = remoteDataSource
     }
     
-    func fetchMovies() async throws -> DiscoverMovieBusinessModel {
-        try await remoteDataSource.fetchMovies()
+    func fetchMovies(with pages: Int) async throws -> DiscoverMovieBusinessModel {
+        try await remoteDataSource.fetchMovies(with: pages)
     }
 }

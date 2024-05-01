@@ -8,8 +8,13 @@
 import Foundation
 
 struct MoviesEndpoint: Endpoint {
-    var path: String = "/discover/movie"
+    var path: String
     var httpMethod: HTTPMethod = .get
-    var httpHeader: [String : String]? = ["Authorization": "Bearer \(Constants.apiKey)"]
+    var httpHeader: [String : String]?
     var httpBody: Encodable?
+    
+    init(page: Int) {
+        path = "/discover/movie?page=\(page)"
+        httpHeader = ["Authorization": "Bearer \(Constants.apiKey)"]
+    }
 }
