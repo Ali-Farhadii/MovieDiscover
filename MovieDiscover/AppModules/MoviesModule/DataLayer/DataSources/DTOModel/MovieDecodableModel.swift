@@ -10,8 +10,7 @@ import Foundation
 struct MovieDecodableModel: Decodable {
     let id: Int
     let overview: String
-    let originalTitle: String
     let title: String
-    let posterPath: String
+    let posterPath: String?
     let releaseDate: String
 }

@@ -37,7 +37,7 @@ struct MoviesURLSessionDataSource: MoviesRemoteDataSource {
     
     private func mapMovieToBusinessModel(_ decodableModel: MovieDecodableModel) -> MovieBusinessModel {
         MovieBusinessModel(title: decodableModel.title,
-                           posterPath: decodableModel.posterPath,
+                           posterPath: decodableModel.posterPath ?? "",
                            releaseDate: decodableModel.releaseDate,
                            overview: decodableModel.overview)
     }

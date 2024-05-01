@@ -39,7 +39,8 @@ class MoviesViewModel: ObservableObject {
         do {
             movies = try await repository.searchMovie(with: text).results.map(mapMoviesToPresentationModel(_:))
         } catch {
-            print(error)
+            isError = true
+            resetStates()
         }
     }
 
@@ -62,7 +63,7 @@ class MoviesViewModel: ObservableObject {
                                   movies.index(movies.endIndex, offsetBy: -1) < discoveryBusinessModel.totalResults
         } catch {
             isError = true
-            page = 0
+            resetStates()
         }
     }
     
@@ -79,5 +80,10 @@ class MoviesViewModel: ObservableObject {
         dateFormatter.dateFormat = "yyyy-MM-dd"
         let date = dateFormatter.date(from: stringDate) ?? .now
         return dateFormatter.string(from: date)
+    }
+    
+    nonisolated private func resetStates() {
+        page = 0
+        movies = []
     }
 }
