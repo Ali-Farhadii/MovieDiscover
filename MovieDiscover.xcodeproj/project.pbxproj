@@ -13,6 +13,7 @@
 		22C960882BE207E00022DBF9 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 22C960872BE207E00022DBF9 /* Preview Assets.xcassets */; };
 		22C960912BE20AF50022DBF9 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22C960902BE20AF50022DBF9 /* NetworkService.swift */; };
 		22C960952BE20BA40022DBF9 /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22C960942BE20BA40022DBF9 /* HTTPMethod.swift */; };
+		22C960972BE20CA70022DBF9 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22C960962BE20CA70022DBF9 /* Constants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +24,7 @@
 		22C960872BE207E00022DBF9 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		22C960902BE20AF50022DBF9 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
 		22C960942BE20BA40022DBF9 /* HTTPMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPMethod.swift; sourceTree = "<group>"; };
+		22C960962BE20CA70022DBF9 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,8 +59,8 @@
 			children = (
 				22C960802BE207DF0022DBF9 /* MovieDiscoverApp.swift */,
 				22C960822BE207DF0022DBF9 /* ContentView.swift */,
-				22C960842BE207E00022DBF9 /* Assets.xcassets */,
 				22C9608E2BE20AC50022DBF9 /* Service */,
+				22C960982BE20CAC0022DBF9 /* Resources */,
 				22C960862BE207E00022DBF9 /* Preview Content */,
 			);
 			path = MovieDiscover;
@@ -88,6 +90,15 @@
 				22C960942BE20BA40022DBF9 /* HTTPMethod.swift */,
 			);
 			path = Network;
+			sourceTree = "<group>";
+		};
+		22C960982BE20CAC0022DBF9 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				22C960962BE20CA70022DBF9 /* Constants.swift */,
+				22C960842BE207E00022DBF9 /* Assets.xcassets */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -164,6 +175,7 @@
 				22C960912BE20AF50022DBF9 /* NetworkService.swift in Sources */,
 				22C960952BE20BA40022DBF9 /* HTTPMethod.swift in Sources */,
 				22C960812BE207DF0022DBF9 /* MovieDiscoverApp.swift in Sources */,
+				22C960972BE20CA70022DBF9 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
