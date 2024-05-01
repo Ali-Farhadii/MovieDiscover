@@ -25,6 +25,7 @@ class MoviesViewModel: ObservableObject {
     func searchMovie(with newValue: String) {
         Task {
             if newValue.isEmpty {
+                page = 0
                 movies = []
                 await fetchMovies()
             } else {
