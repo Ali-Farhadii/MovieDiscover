@@ -11,20 +11,16 @@ struct AboutView: View {
     var body: some View {
         NavigationStack {
             VStack(alignment: .center) {
-                Image(.ali)
-                    .resizable()
-                    .scaledToFit()
-                    .frame(width: 200, height: 200)
-                    .clipShape(.capsule)
                 
                 Spacer()
                     .frame(height: 30)
                 
-                Text("Ali Farhadi")
+                Text("Movie Discover")
                     .font(.largeTitle)
                 
-                Text("iOS Developer")
-                    .font(.title)
+                Text("This app is uses the TMDB free APIs to show a list of movies with pagination and search features.\nI have used SwiftUI for UI part and also new Swift concurrency system for networking layer.")
+                    .font(.title2)
+                    .padding()
                 
                 Spacer()
                     .frame(height: 50)
