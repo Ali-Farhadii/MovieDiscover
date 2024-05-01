@@ -6,3 +6,7 @@
 //
 
 import Foundation
+
+struct AppDependencyContainer {
+    let moviesDependencyContainer = MoviesDependencyContainer()
+}

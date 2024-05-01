@@ -18,6 +18,7 @@
 		22C9609A2BE20F5F0022DBF9 /* URLSessionService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22C960992BE20F5F0022DBF9 /* URLSessionService.swift */; };
 		22C9609C2BE210100022DBF9 /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22C9609B2BE210100022DBF9 /* NetworkError.swift */; };
 		22C960A42BE2179D0022DBF9 /* MoviesDependencyContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22C960A32BE2179D0022DBF9 /* MoviesDependencyContainer.swift */; };
+		22C960A62BE217EA0022DBF9 /* AppDependencyContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22C960A52BE217EA0022DBF9 /* AppDependencyContainer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +34,7 @@
 		22C960992BE20F5F0022DBF9 /* URLSessionService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSessionService.swift; sourceTree = "<group>"; };
 		22C9609B2BE210100022DBF9 /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
 		22C960A32BE2179D0022DBF9 /* MoviesDependencyContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesDependencyContainer.swift; sourceTree = "<group>"; };
+		22C960A52BE217EA0022DBF9 /* AppDependencyContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDependencyContainer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +117,7 @@
 			isa = PBXGroup;
 			children = (
 				22C960802BE207DF0022DBF9 /* MovieDiscoverApp.swift */,
+				22C960A52BE217EA0022DBF9 /* AppDependencyContainer.swift */,
 			);
 			path = Application;
 			sourceTree = "<group>";
@@ -232,6 +235,7 @@
 			files = (
 				22C960832BE207DF0022DBF9 /* MoviesView.swift in Sources */,
 				22C9609C2BE210100022DBF9 /* NetworkError.swift in Sources */,
+				22C960A62BE217EA0022DBF9 /* AppDependencyContainer.swift in Sources */,
 				22C9609A2BE20F5F0022DBF9 /* URLSessionService.swift in Sources */,
 				22C960A42BE2179D0022DBF9 /* MoviesDependencyContainer.swift in Sources */,
 				22C960912BE20AF50022DBF9 /* NetworkService.swift in Sources */,

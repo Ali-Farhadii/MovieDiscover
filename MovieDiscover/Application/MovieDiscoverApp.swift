@@ -9,9 +9,12 @@ import SwiftUI
 
 @main
 struct MovieDiscoverApp: App {
+    
+    let appDependencyContainer = AppDependencyContainer()
+    
     var body: some Scene {
         WindowGroup {
-            MoviesView()
+            appDependencyContainer.moviesDependencyContainer.movieView
         }
     }
 }
