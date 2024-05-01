@@ -14,7 +14,7 @@ struct MovieDiscoverApp: App {
     
     var body: some Scene {
         WindowGroup {
-            appDependencyContainer.moviesDependencyContainer.movieView
+            appDependencyContainer.moviesDependencyContainer.rootView
         }
     }
 }
