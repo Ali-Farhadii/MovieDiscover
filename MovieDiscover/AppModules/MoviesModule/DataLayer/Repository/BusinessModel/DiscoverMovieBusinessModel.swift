@@ -8,5 +8,8 @@
 import Foundation
 
 struct DiscoverMovieBusinessModel {
-    
+    let page: Int
+    let totalPages: Int
+    let totalResults: Int
+    let results: [MovieBusinessModel]
 }

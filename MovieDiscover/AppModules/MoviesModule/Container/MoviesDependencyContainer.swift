@@ -25,7 +25,19 @@ struct MoviesDependencyContainer {
     }
     
     var movieView: some View {
-        MoviesView()
+        MoviesView(viewModel: moviesViewModel)
+    }
+    
+    private var moviesViewModel: MoviesViewModel {
+        MoviesViewModel(repository: moviesRepository)
+    }
+    
+    private var moviesRepository: MoviesRepositoryProtocol {
+        MoviesRepository(remoteDataSource: moviesRemoteDataSource)
+    }
+    
+    private var moviesRemoteDataSource: MoviesRemoteDataSource {
+        MoviesURLSessionDataSource(networkService: URLSessionService())
     }
     
     var aboutView: some View {
