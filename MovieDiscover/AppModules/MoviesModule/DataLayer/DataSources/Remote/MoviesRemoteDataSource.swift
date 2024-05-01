@@ -24,10 +24,16 @@ struct MoviesURLSessionDataSource: MoviesRemoteDataSource {
     }
     
     private func mapDiscoverMoviesToBusinessModel(_ decodableModel: DiscoverMovieDecodableModel) -> DiscoverMovieBusinessModel {
-        DiscoverMovieBusinessModel()
+        DiscoverMovieBusinessModel(page: decodableModel.page,
+                                   totalPages: decodableModel.totalPages,
+                                   totalResults: decodableModel.totalResults,
+                                   results: decodableModel.results.map(mapMovieToBusinessModel(_:)))
     }
     
-    private func mapMovieToBusinessModel(_ decodableModel: MovieBusinessModel) -> MovieBusinessModel {
-        MovieBusinessModel()
+    private func mapMovieToBusinessModel(_ decodableModel: MovieDecodableModel) -> MovieBusinessModel {
+        MovieBusinessModel(title: decodableModel.title,
+                           posterPath: decodableModel.posterPath,
+                           releaseDate: decodableModel.releaseDate,
+                           overview: decodableModel.overview)
     }
 }
