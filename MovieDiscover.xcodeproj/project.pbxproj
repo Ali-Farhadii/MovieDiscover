@@ -17,6 +17,7 @@
 		22C960972BE20CA70022DBF9 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22C960962BE20CA70022DBF9 /* Constants.swift */; };
 		22C9609A2BE20F5F0022DBF9 /* URLSessionService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22C960992BE20F5F0022DBF9 /* URLSessionService.swift */; };
 		22C9609C2BE210100022DBF9 /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22C9609B2BE210100022DBF9 /* NetworkError.swift */; };
+		22C960A42BE2179D0022DBF9 /* MoviesDependencyContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22C960A32BE2179D0022DBF9 /* MoviesDependencyContainer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +32,7 @@
 		22C960962BE20CA70022DBF9 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		22C960992BE20F5F0022DBF9 /* URLSessionService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSessionService.swift; sourceTree = "<group>"; };
 		22C9609B2BE210100022DBF9 /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
+		22C960A32BE2179D0022DBF9 /* MoviesDependencyContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesDependencyContainer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -128,6 +130,7 @@
 		22C9609F2BE2172D0022DBF9 /* MoviesModule */ = {
 			isa = PBXGroup;
 			children = (
+				22C960A22BE217860022DBF9 /* Container */,
 				22C960A02BE217380022DBF9 /* PresentationLayer */,
 			);
 			path = MoviesModule;
@@ -147,6 +150,14 @@
 				22C960822BE207DF0022DBF9 /* MoviesView.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		22C960A22BE217860022DBF9 /* Container */ = {
+			isa = PBXGroup;
+			children = (
+				22C960A32BE2179D0022DBF9 /* MoviesDependencyContainer.swift */,
+			);
+			path = Container;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -222,6 +233,7 @@
 				22C960832BE207DF0022DBF9 /* MoviesView.swift in Sources */,
 				22C9609C2BE210100022DBF9 /* NetworkError.swift in Sources */,
 				22C9609A2BE20F5F0022DBF9 /* URLSessionService.swift in Sources */,
+				22C960A42BE2179D0022DBF9 /* MoviesDependencyContainer.swift in Sources */,
 				22C960912BE20AF50022DBF9 /* NetworkService.swift in Sources */,
 				22C960932BE20B2E0022DBF9 /* Endpoint.swift in Sources */,
 				22C960952BE20BA40022DBF9 /* HTTPMethod.swift in Sources */,
