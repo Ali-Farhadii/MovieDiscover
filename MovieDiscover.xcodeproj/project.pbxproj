@@ -12,6 +12,7 @@
 		22C960852BE207E00022DBF9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 22C960842BE207E00022DBF9 /* Assets.xcassets */; };
 		22C960882BE207E00022DBF9 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 22C960872BE207E00022DBF9 /* Preview Assets.xcassets */; };
 		22C960912BE20AF50022DBF9 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22C960902BE20AF50022DBF9 /* NetworkService.swift */; };
+		22C960952BE20BA40022DBF9 /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22C960942BE20BA40022DBF9 /* HTTPMethod.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +22,7 @@
 		22C960842BE207E00022DBF9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		22C960872BE207E00022DBF9 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		22C960902BE20AF50022DBF9 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		22C960942BE20BA40022DBF9 /* HTTPMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPMethod.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -160,6 +162,7 @@
 			files = (
 				22C960832BE207DF0022DBF9 /* ContentView.swift in Sources */,
 				22C960912BE20AF50022DBF9 /* NetworkService.swift in Sources */,
+				22C960952BE20BA40022DBF9 /* HTTPMethod.swift in Sources */,
 				22C960812BE207DF0022DBF9 /* MovieDiscoverApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
