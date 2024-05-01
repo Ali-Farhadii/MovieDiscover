@@ -64,7 +64,7 @@
 			isa = PBXGroup;
 			children = (
 				22C9609D2BE215ED0022DBF9 /* Application */,
-				22C960822BE207DF0022DBF9 /* MoviesView.swift */,
+				22C9609E2BE2169D0022DBF9 /* AppModules */,
 				22C9608E2BE20AC50022DBF9 /* Service */,
 				22C960982BE20CAC0022DBF9 /* Resources */,
 				22C960862BE207E00022DBF9 /* Preview Content */,
@@ -115,6 +115,38 @@
 				22C960802BE207DF0022DBF9 /* MovieDiscoverApp.swift */,
 			);
 			path = Application;
+			sourceTree = "<group>";
+		};
+		22C9609E2BE2169D0022DBF9 /* AppModules */ = {
+			isa = PBXGroup;
+			children = (
+				22C9609F2BE2172D0022DBF9 /* MoviesModule */,
+			);
+			path = AppModules;
+			sourceTree = "<group>";
+		};
+		22C9609F2BE2172D0022DBF9 /* MoviesModule */ = {
+			isa = PBXGroup;
+			children = (
+				22C960A02BE217380022DBF9 /* PresentationLayer */,
+			);
+			path = MoviesModule;
+			sourceTree = "<group>";
+		};
+		22C960A02BE217380022DBF9 /* PresentationLayer */ = {
+			isa = PBXGroup;
+			children = (
+				22C960A12BE2173F0022DBF9 /* View */,
+			);
+			path = PresentationLayer;
+			sourceTree = "<group>";
+		};
+		22C960A12BE2173F0022DBF9 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				22C960822BE207DF0022DBF9 /* MoviesView.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
